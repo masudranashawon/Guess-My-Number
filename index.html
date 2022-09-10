@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Guess My Number</title>
+		<link rel="stylesheet" href="./style.css" />
+		<link rel="stylesheet" href="./responsive.css" />
+	</head>
+	<body>
+		<!-- GAME SECTION STARTS -->
+		<div class="game-screen">
+			<div class="game-header">
+				<button class="btn play-again">Play Again!</button>
+				<p>(Guess Between 1 and 20)</p>
+			</div>
+			<h1 class="game-title">Guess My Number</h1>
+			<div class="game-correct-ans">?</div>
+			<div class="game-guess-screen">
+				<div class="check-screen">
+					<input type="number" class="number-input" />
+					<button class="btn check">Check</button>
+				</div>
+				<div class="score-screen">
+					<p class="guessing-text">Start guessing...</p>
+					<p>Score: <span class="score">20</span></p>
+					<p>Highscore: <span class="high-score">0</span></p>
+				</div>
+			</div>
+		</div>
+		<!-- GAME SECTION ENDED -->
+
+		<!-- GAME OVER MODAL STARTS -->
+		<div class="game-over-modal">
+			<div class="game-over-content">
+				<h2>Game Over!😭</h2>
+				<button class="play-again-btn btn">Play Again!</button>
+			</div>
+		</div>
+		<!-- GAME OVER MODAL ENDED -->
+		<script src="./main.js"></script>
+	</body>
+</html>

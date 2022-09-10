@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: 0;
+	border: none;
+}
+
+body {
+	/* font-family: 'Courier New', Courier, monospace; */
+	font-family: 'Press Start 2P', cursive;
+	overflow: hidden;
+	background-color: #222;
+	color: #eaeaea;
+	font-size: 1.5rem;
+}
+
+.btn {
+	font-family: inherit;
+	font-size: 1.3rem;
+	padding: 1rem 2rem;
+	cursor: pointer;
+	font-weight: bold;
+	border-radius: 4px;
+	transition: all 0.3s ease-in-out;
+	box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+	background-color: teal;
+	color: #eaeaea;
+}
+
+.play-again:hover {
+	background-color: rgba(235, 28, 69, 0.753);
+}
+
+.game-screen {
+	width: 100vw;
+	height: 100vh;
+	padding: 0 2rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.game-header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.game-header p {
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+
+.game-title {
+	text-align: center;
+	font-size: 2.8rem;
+}
+
+.game-correct-ans {
+	width: 10rem;
+	height: 10rem;
+	background-color: teal;
+	color: #eaeaea;
+	align-self: center;
+	border-radius: 0.5rem;
+	display: grid;
+	place-items: center;
+	font-size: 2.5rem;
+	font-weight: bold;
+	box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+	border: 2px dotted #eaeaea;
+	background-clip: content-box;
+}
+
+.game-guess-screen {
+	display: flex;
+	justify-content: space-between;
+}
+
+.check-screen {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.number-input {
+	font-size: 2.5rem;
+	max-width: 10rem;
+	font-family: inherit;
+	color: #222;
+	font-weight: bold;
+	padding: 0.8rem;
+	border-radius: 0.4rem;
+	text-align: center;
+	box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.check {
+	width: 10rem;
+	box-shadow: 0 2rem 2rem rgba(0, 0, 0, 0.1);
+}
+
+.score-screen {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	font-weight: bold;
+}
+
+.game-over-modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(235, 28, 69, 0.753);
+	display: grid;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.3s ease-in-out;
+	visibility: hidden;
+	opacity: 0;
+}
+
+.game-over-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	background: #eaeaea;
+	color: #222;
+	width: 45rem;
+	height: 50vh;
+	border-radius: 0.5rem;
+	justify-content: center;
+}
+
+.game-over-content .btn {
+	background-color: teal;
+	color: #eaeaea;
+}
+
+.game-over-content .btn:hover {
+	background-color: rgb(235, 28, 69);
+}
+
+.game-over-content .btn:active {
+	border: 0.3rem solid teal;
+}

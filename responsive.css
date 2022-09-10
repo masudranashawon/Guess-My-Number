@@ -1,0 +1,123 @@
+@media only screen and (max-width: 768px) {
+	body {
+		font-size: 1.1rem;
+	}
+
+	.game-title {
+		font-size: 2rem;
+	}
+
+	.btn {
+		font-size: 1rem;
+		padding: 0.7rem 1.5rem;
+		border-radius: 3px;
+	}
+
+	.game-correct-ans {
+		width: 7rem;
+		height: 7rem;
+		border-radius: 0.4rem;
+		font-size: 2rem;
+	}
+
+	.number-input {
+		font-size: 2.2rem;
+		padding: 0.5rem;
+		border-radius: 0.3rem;
+	}
+
+	.game-header p {
+		font-size: 1rem;
+	}
+}
+
+@media only screen and (max-width: 570px) {
+	body {
+		font-size: 1.2rem;
+	}
+
+	.game-correct-ans {
+		width: 10rem;
+		height: 10rem;
+		border-radius: 0.4rem;
+		font-size: 2rem;
+		margin-top: 20px;
+	}
+
+	.game-title {
+		font-size: 2rem;
+	}
+
+	.game-header {
+		align-items: center;
+		flex-direction: column;
+		justify-content: space-evenly;
+		padding: 2rem 0;
+		gap: 1rem;
+		margin-top: 2rem;
+	}
+
+	.game-guess-screen {
+		flex-direction: column;
+		align-items: center;
+		gap: 2rem;
+		padding: 2rem 0;
+	}
+
+	.check-screen {
+		gap: 1rem;
+	}
+
+	.game-over-content {
+		gap: 1rem;
+		background: #eaeaea;
+		color: #222;
+		width: 70vw;
+		height: 50vh;
+		border-radius: 0.5rem;
+		justify-content: center;
+	}
+
+	.game-over-content h2 {
+		font-size: 1.3rem;
+	}
+
+	.game-over-content .btn {
+		font-size: 0.8rem;
+	}
+}
+
+@media only screen and (max-width: 320px) {
+	body {
+		font-size: 0.8rem;
+	}
+
+	.game-over-content h2 {
+		font-size: 1rem;
+	}
+
+	.game-over-content {
+		width: 80vw;
+		height: 30vh;
+	}
+
+	.btn {
+		font-size: 0.8rem;
+		padding: 1rem 2rem;
+		border-radius: 5px;
+	}
+
+	.game-header p {
+		font-size: 0.6rem;
+		font-weight: normal;
+	}
+
+	.game-title {
+		font-size: 1rem;
+	}
+
+	.game-correct-ans {
+		width: 7rem;
+		height: 7rem;
+	}
+}
